@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="row-md">
+        <div class="col-md">
+            <h1 class="text-center">Webfejlesztés beadandó</h1>
+            <br>
+            <p><span class="lnr lnr-user"></span> <span class="important">Név:</span> György Dóra Antónia</p>
+            <p><span class="lnr lnr-license"></span> <span class="important">Neptun kód:</span> CQI3O7</p>
+            <p><span class="lnr lnr-file-add"></span> <span class="important">A szerintem érdemelt jegy:</span> 5</p>
+
+        </div>
+    </header>
+
+    <section class="center" id="loginSection">
+        <div id="loginDiv">
+            <form action="process.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="form-control" placeholder="Írja be az email címét" id="email">
+                </div>
+                <div class="form-group">
+                    <label id="pswlabel" for="pwd">Jelszó:</label>
+                    <input type="password" name="password" class="form-control" placeholder="Írja be a jelszavát" id="pwd">
+                </div>
+                <div class="float-right">
+                    <button type="submit" class="btn btn-secondary text">Kész</button>
+                </div>
+                <div id="warning"></div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
